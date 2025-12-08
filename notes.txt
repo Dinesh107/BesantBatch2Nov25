@@ -1,0 +1,23 @@
+margin - space around the an element 
+
+Float - allows other element to flow around it 
+
+overflow - property that sets the desired behavior when content does not fit in parent element or box(overflows)
+
+overflows : visible
+scroll
+hidden
+auto
+
+
+display - property specifies if/how an element is displayed
+
+block level  - start on a new line, take up the full width of the avialabe space
+
+h1, div, p, form, footer
+
+inline - do not start on a new line,
+
+span, a, img
+
+

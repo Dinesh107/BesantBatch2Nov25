@@ -83,7 +83,7 @@ h1 {
 
 #p1 {
     border-left: 3px dashed lawngreen;
-} */
+} 
 
 
 #myH1 {
@@ -95,4 +95,87 @@ h1 {
     height: 100px;
     background-color: lightskyblue;
     box-shadow:  2px 2px 4px lightcoral, -2px -2px 4px lightgreen;
+} 
+ body {
+    margin: 0px;
+ }
+
+ .box {
+    border: 5px solid ;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    /* margin: 200px; */
+    /* margin: auto; 
+    
+ }
+
+ #box1 {
+      background-color: lightblue;
+      /* margin-top: 50px; */
+      /* margin-bottom: 50px; */
+      /* margin-left: 200px;
+      margin-top: 200px; 
+      margin: 200px; */
+      /* margin-left: auto; */
+
+
+ /* }
+
+ #box2 {
+    background-color: lightcoral;
+   margin-left: 200px; 
+ } 
+
+body {
+    border: 3px solid;
+    display: flow-root;
 }
+
+#img1 {
+  
+    float: left;
+    margin-right: 10px;
+
+}
+
+#img2 {
+    float: right;
+    margin-left: 10px;
+} */
+
+
+/* #div1 { */
+    /* border: 2px solid;   
+    height: 60px; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+/* } */
+
+
+/* 
+#div1 {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    /* display: inline-block;
+    display: none;
+    visibility: hidden;
+}
+
+#span1 {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    visibility: hidden;
+} 
+
+9994030296 - Dinesh
+name
+dept 
+passed 
+course  */
+
+
