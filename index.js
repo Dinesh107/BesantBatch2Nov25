@@ -426,3 +426,224 @@ const PI = 3.14;
 // } else {
 //   console.log("That is PIE " + false);
 // }
+
+// Control statement or looping statement
+
+1 - 10;
+
+// intializaion - were we start
+
+// condition - based true or false
+// true - loop will run or exxute the code
+// false - loop will stop
+
+// operator(increase or decrease the value) -  were we stop
+
+// increement and decremennt operator
+
+// types of loops
+
+// while loop, do-while,
+
+//   for loop, for each loop
+
+// while - Entry control loop
+
+// do while - Exit control loop
+
+// let i = 1;  // were we start
+
+// while(i < 4) {   // consdition - were we stop
+
+//     console.log(i);
+//     i++;  // increase or decrase the value  // i =2, 3, 4, 5
+// }
+
+// do {
+
+//     console.log(i);
+//     i++;
+
+// } while (i <= 4);
+
+// i = 4
+
+//        1       2       4
+// for(let i = 1; i <= 3; i++) {
+//     // 3step
+//     console.log(i);
+// }
+
+// 10
+// 9
+// 8
+// 7
+// 6
+// 5
+// 4
+// 3
+// 2
+// 1
+
+// 1 < 10
+
+// 1 < 10
+
+// 10 > 1
+// 9 > 1
+// 1 >= 1
+// i >= 1
+
+// for(let i = 10; i >= 1; i--) {
+//       console.log(i);
+// }
+
+// task 1
+
+// x
+// y
+// x
+// y
+// x
+
+// task 2
+
+// 0
+// 0
+// 0
+// 0
+// 1
+// 1
+// 1
+// 1
+
+// task 3
+
+// x
+// x
+// x
+// x
+// y y y y y
+
+// nested loop
+
+// for(let i = 1; i < 5; i++) {
+//     console.log(`the current value of i is: ${i}`);
+//     for(let j = 1; j < 3; j++) {
+//         console.log(`j: ${j}`);
+//     }
+// }
+
+// 2 X 1 = 2
+// 2 X 2 = 4
+
+// let height = 3;
+// let pattern = "";
+
+// //             3 <=  3
+// for(let i = 1; i <= height; i++) {
+//     console.log(i);
+// //                 0 < 3
+//     for(let j = 0; j < i; j++) {
+//         pattern = pattern + "* ";
+//     }
+
+//     pattern += "\n";
+
+// }
+
+// console.log(pattern);
+
+//        *
+//     *  *
+// *  *  *
+
+// Functions - a section of reusable code, declare once, reuse it whenever we want
+
+// call the functions to execute the code
+
+// console.log("Happy birthday to you");
+// console.log("Happy birthday to you ");
+// console.log("Happy birthday dear you");
+// console.log("Happy birthday to you");
+
+// helloWorld
+
+// function happyBirthday(userName, age) {
+//   console.log("Happy birthday to you");
+//   console.log("Happy birthday to you ");
+//   console.log(`Happy birthday dear ${userName}`);
+//   console.log("Happy birthday to you");
+//   console.log(`you are ${age} years old`);
+// }
+
+// happyBirthday("Mani", 20);
+
+
+// function add(a, b) {
+//     let result = a + b;
+//     return result;
+// }
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// let answer = add(2, 4);
+
+// console.log(`the anser is ${answer}`);
+
+// function isEven(number) {
+//     return number % 2 === 0 ? true : false;
+// }
+
+// console.log(isEven(1));
+
+// function isValidEmail(email) {
+//    if(email.includes("@")) {
+//     return true;
+//    } else {
+//     return false;
+//    }
+// }
+
+//is validUsername
+
+// Mani#123
+
+
+// console.log(isValidEmail("mani@gmail.com"));
+// console.log(isValidEmail("mani.com"));
+
+
+// add(2, 4) = result
+
+
+// Vraibale scope - where a variable is regonised and accessible(local vs global)
+
+
+// let x = 1;
+// let x = 9;
+
+// function func1() {
+//     let x = 1;
+//     console.log(x);
+// }
+// function func2() {
+//      let x = 8;
+//     console.log(x);
+// }
+
+// // func1();
+// func2();
+
+
+// Array - a varibale like structure that can hold more than 1 value 
+
+
+// length = 3
+// index = [0 to 2]
+let vegetables = ["carrot", "tomato", "beetroot"];
+
+console.log(vegetables);
+
