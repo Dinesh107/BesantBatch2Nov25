@@ -737,21 +737,19 @@
 //     return strings.join(" ");
 // }
 
-
 // const fullName = combineStrings("Mr", "Mani", "student", "90191");
 
 // console.log(fullName);
 
-// callbacks - a function that is passed as an argument to another function 
+// callbacks - a function that is passed as an argument to another function
 
 // used to handling asynchrouns operations
 
-// Reading a file 
+// Reading a file
 // Network requests (APIs)
-// Interacting with database 
+// Interacting with database
 
-
-// Hey, when you are done, call this next 
+// Hey, when you are done, call this next
 
 // hello(wait);
 
@@ -787,12 +785,10 @@
 //      document.getElementById("myH1").textContent = result;
 // }
 
-
-// forEach - method used to iterate over the elements of an array and apply a specified function (callback) to each element 
+// forEach - method used to iterate over the elements of an array and apply a specified function (callback) to each element
 
 // array.forEach(callback);
 // element, Index, array are provide - the location of an array
-
 
 // let numbers = [1, 2, 3, 4, 5];
 
@@ -811,10 +807,7 @@
 //    console.log(element);
 // }
 
-
 // let fruits = ["apple", "orange", "banana", "kiwi"];
-
-
 
 // fruits.forEach(captilise);
 // fruits.forEach(display);
@@ -831,12 +824,9 @@
 //    console.log(element);
 // }
 
-
-// .map() - accepts a callback and applies that function to each element of an array, that return a new array 
-
+// .map() - accepts a callback and applies that function to each element of an array, that return a new array
 
 // const numbers = [1, 2, 3, 4, 5];
-
 
 // const squares = numbers.map(square);
 
@@ -853,10 +843,8 @@
 // console.log(stuUpper);
 
 // function uppercase(element){
-//     return element.toUpperCase();  
+//     return element.toUpperCase();
 // }
-
-
 
 // const dates = ["2026-1-06", "2025-2-23"];
 
@@ -864,8 +852,224 @@
 
 // console.log(formattedDates);
 
-
 // function formatDates(element) {
 //     const parts = element.split("-");
 //     return `${parts[2]}/${parts[1]}/${parts[0]}`;
 // }
+
+// .filter() = creates a new array by filter put elements
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// let evenNums = numbers.filter(isEven);
+
+// console.log(evenNums);
+
+// function isEven(element) {
+//     return element % 2 === 0;
+// }
+
+// const ages = [24, 25, 16, 15, 26, 18];
+
+// const adults = ages.filter(isAdult);
+
+// console.log(adults);
+
+// function isAdult(element) {
+//     return element >= 18;
+// }
+
+//
+
+// .reduce = reduce the elements og an array to a single value
+
+// const prices = [10, 10, 20, 40, 60];
+
+// const total = prices.reduce(sum);
+
+// console.log(`₹${total.toFixed(2)}`);
+// //
+// //           previousEle,  next
+// function sum(accumlator, element) {
+//     return accumlator + element;
+// }
+
+// const grades = [80, 60, 80, 100, 90];
+
+// const maximum = grades.reduce(getmax);
+// const maximum = grades.reduce(function getmax(accum, ele) {
+//     return Math.max(accum, ele);
+// });
+
+// console.log(maximum);
+
+// function exprssion  - way to definne the function as values or variable
+
+// arrow function - a consise way to write function exprssions .
+// (parameters) => some code
+
+// function hello() {
+//     console.log("Hello");
+// }
+
+// const hello = function() {
+//      console.log("Hello");
+// }
+
+// const hello = (name, age) => {
+//   console.log(`hello ${name}`);
+//   console.log(`You are ${age} old`);
+// };
+
+// hello("mani", 23);
+
+// setTimeout(function hello() {
+//     console.log("hello");
+// }, 2000);
+
+// setTimeout(() => console.log("hello"), 2000);
+
+// function hello() {
+//     console.log("hello");
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const squares = numbers.map((element) => Math.pow(element, 2));
+// const evenNums = numbers.filter((element) => element % 2 === 0);
+// const total = numbers.reduce((a, e) => a + e)
+
+// console.log(total);
+// console.log(squares);
+// console.log(evenNums);
+
+// Destructuring - extract values from array and objects {} [] then assign them to variables in a convenient way
+
+// [] - to perform arry destructing
+// {} - to perform object destructuring
+
+// Example 1 -
+// swap the values of two variables
+
+// let a = 1;
+// let b = 2;
+// console.log(a, b);
+// destructuring = creating a array
+// [a, b] = [b, a];
+
+// console.log(a, b);
+
+// Example 2
+// we can swap the elements in an arrary
+
+// const colors = ["red", "green", "blue", "black", "white"];
+
+// [colors[0], colors[4]] = [colors[4], colors[0]];
+
+// console.log(colors);
+
+// Example 3 - assign array elements to variables
+
+// const colors =  ["red", "green", "blue", "black", "white"];
+
+// const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+
+// console.log(firstColor, secondColor, thirdColor);
+// console.log(extraColors);
+
+// ex 4
+// extract value from object
+
+// const employee1 = {
+//     firstname: "mani",
+//     lastName: "siva",
+//     age: 20,
+//     job: "Software Engineer",
+// }
+// const employee2 = {
+//     firstname: "ganesh",
+//     lastName: "kumar",
+//     age: 23,
+// }
+
+// const { firstname, lastName, age, job } = employee2;
+
+// console.log(firstname);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+// example 5 - Destructing in function parametrs
+
+// function displayEmployee({firstname, lastName, age, job="unemployee"}) {
+//    console.log(firstname, lastName, age, job);
+// }
+
+// const employee1 = {
+//     firstname: "mani",
+//     lastName: "siva",
+//     age: 20,
+//     job: "Software Engineer",
+// }
+// const employee2 = {
+//     firstname: "ganesh",
+//     lastName: "kumar",
+//     age: 23,
+// }
+
+// displayEmployee(employee2);
+
+// closure - function defines inside another function
+// the inner function has access to the vraiables and scope of the outer function
+// allow for private varaibles and state maintaence
+// used frequantly in in framework - Vue, react, angualr
+
+// function outer() {
+//     let message = "hello students";
+//     function inner() {
+//        console.log(message);
+//     }
+//     inner();
+// }
+
+// outer();
+
+// function createaCounter() {  // class 
+//   let count = 0;
+//   function increment() {
+//     count++;
+//     console.log(`count increased to ${count}`);
+//   }
+
+
+//   return { increment };
+// }
+
+
+//     object
+// const counter = createaCounter();
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+
+
+// synchronous - Excutes line by line consecutively in a sequntail manner 
+// code that wiats for an operation to compelte
+
+// Asynchronous - allow multiple operations to be performed concurrently without waiting 
+// does not block the execution flow and allow the program to continue
+
+// I/O operations/ API Calls/ Fetching the data
+// callbacks, promises, async/await
+
+
+// setTimeout(()=>{console.log("task 1")}, 3000);
+
+// console.log("task 2");
+// console.log("task 3");
+// console.log("task 4");
+
+
+
+
